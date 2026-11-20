@@ -1,0 +1,13 @@
+mollie:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+      user: "{{ env_var('SNOWFLAKE_USER') }}"
+      role: "{{ env_var('SNOWFLAKE_ROLE') }}"
+      authenticator: externalbrowser
+      database: "{{ env_var('DBT_DATABASE') }}"
+      schema: "{{ env_var('DBT_SCHEMA') }}"
+      warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE') }}"
+      threads: 2
