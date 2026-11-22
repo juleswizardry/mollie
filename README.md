@@ -1,15 +1,10 @@
-Welcome to your new dbt project!
+# Mollie analytics challenge
 
-### Using the starter project
+This dbt project was created for Mollie's analytics challenge and contains the models used for the SQL assessment.
 
-Try running the following commands:
-- dbt run
-- dbt test
+## Assessment queries
 
+The purpose models contain the SQL for questions 2A and 2B:
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+- **Question 2A — Price change report:** [`models/purpose/sales/price_updates.sql`](models/purpose/sales/price_updates.sql).
+- **Question 2B — Payment fees:** [`models/purpose/finance/total_revenue.sql`](models/purpose/finance/total_revenue.sql).
