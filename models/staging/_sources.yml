@@ -1,0 +1,7 @@
+sources:
+  - name: raw
+    tables:
+      - name: payments
+      - name: organizations
+      - name: default_pricing
+      - name: custom_pricing

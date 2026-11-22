@@ -5,3 +5,5 @@ logs/
 .env
 .venv/
 .user.yml
+.vscode/
+.package-lock.yml

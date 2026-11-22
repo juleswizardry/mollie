@@ -1,0 +1,17 @@
+version: 2
+models:
+  - name: fct_payments
+    columns:
+      - name: payment_id
+        data_tests:
+          - unique
+      - name: customer_id
+        data_tests:
+          - dbt_utils.relationships_where:
+              to: ref('fct_organizations')
+              field: customer_id
+  - name: fct_organizations
+    columns:
+      - name: customer_id
+        data_tests:
+          - unique
